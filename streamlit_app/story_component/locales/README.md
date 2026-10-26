@@ -1,6 +1,6 @@
 # Story translation guide
 
-The Streamlit story publishes **Brazilian Portuguese and English**, with all 450
+The Streamlit story publishes **Brazilian Portuguese and English**, with all 456
 messages translated. Portuguese is the initial language; English remains the
 fallback. The header language selector appears beside Terminology. Both catalogs
 are marked `ready`. Source documentation and downloadable diagnostic artifacts
@@ -8,7 +8,7 @@ retain their original language.
 
 ## Files to edit
 
-- `en.json` is the reviewed English source, with 450 stable message IDs.
+- `en.json` is the reviewed English source, with 456 stable message IDs.
 - `pt-BR.json` has the same IDs and the Brazilian Portuguese translations.
 - `manifest.json` controls publication, the initial locale and Intl formatting.
 - `../i18n.js` handles fallback, interpolation, plural forms and formatting.
@@ -101,6 +101,23 @@ destaques / Sem destaque”; the accompanying explanation defines the 0.20 loadi
 threshold. These labels do not imply exclusive interests or popularity rankings.
 “Interesse principal definido” requires a unique, non-Diffuse maximum. Shared
 context is presented as “Filtros comuns a A e B”.
+
+Keep one voice in both languages: address the reader directly, and use “Explore”
+for interactive content and “Veja” / “See” for content to read. Use one term per
+idea:
+
+| Idea | Portuguese | English |
+|---|---|---|
+| Data record / people in prose | perfil / pessoas, jogadores | profile / people, players |
+| Competitive games | partidas competitivas (“ranqueadas” only in precise terms) | competitive games (“ranked” only in precise terms) |
+| Denominator / too little data | base / base insuficiente | base / not enough data |
+| Parent comparison group | referência | reference |
+| Accepted family or threshold | adotada, adotado | adopted |
+| Cash spending / content acquired | gastos / aquisições | spending / acquisitions |
+| Dashboard | painel | dashboard |
+| Build | execução dos modelos | model run |
+
+Product names take an article in Portuguese prose (“o SQLite”, “o Databricks”).
 
 Archetype names are translated display labels; A1–A8 and the reviewed model remain
 unchanged. ADCs retains its acronym with a plain explanation. Use the same names
